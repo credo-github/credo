@@ -1,0 +1,21 @@
+parameters:
+  name:
+    type: string
+  shouldFetchOnLoad:
+    type: boolean
+  fetchedResourceName:
+    type: string
+  tests:
+    type: stringArray
+  styleRules:
+    type: stringArray
+  props:
+    type: stringArray
+  state:
+    type: stringArray
+    
+tags:
+  - react
+  - welcome
+  - frontend
+  - credo

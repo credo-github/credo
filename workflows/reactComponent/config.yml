@@ -1,0 +1,20 @@
+headline: How we write a React component at Credo
+questions:
+  - name:
+      type: string
+      prompt: What is the component name?
+      subtext:  Use kebab case e.g. "my-super-list-component"
+  - props:
+      type: stringArray
+      prompt: What props does your component need?
+      subtext: "List them like <propName>:<propType> e.g. tags: string[]"
+  - state:
+      type: stringArray
+      prompt: What state does your component need?
+      subtext: "List them like <propName>:<propType> e.g. tags: string[]"
+  - tests:
+      type: stringArray
+      prompt: What should we test about the component?
+      subtext: (start your answers with 'should' e.g. "should render")
+templates:
+  - reactComponentGroup

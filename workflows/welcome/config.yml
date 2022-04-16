@@ -1,0 +1,31 @@
+headline: Credo's starter repo.
+questions:
+  - name:
+      type: string
+      prompt: To get us started, what is your name?
+      subtext:  (it doesn't need to be your real name, just something we can call you for the duration of this welcome)
+  - developerType:
+      prompt: How would you describe yourself as a developer?
+      type: enum
+      enumMembers: 
+        - frontend
+        - backend
+        - fullstack
+        - devops
+        - all of the above
+      switch:
+        frontend:
+          - howHappyFrontend:
+              prompt: How happy are you with being a frontend dev out of 5?
+              type: enum
+              enumMembers:
+               - 1
+               - 2
+               - 3
+               - 4
+               - 5
+  - learnMore:
+      prompt: Would you like to learn more?
+      type: boolean
+templates:
+  - welcome
