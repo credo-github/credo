@@ -4,7 +4,7 @@ This is simple starter repo to help you add Credo to your projects.
 
 Fork this repository and go to `credo.dev/github/<your_github_username>/workflow/welcome` to get started.
 
-### What is Credo
+### What is Credo?
 
 Credo is a way of sharing knowledge about code which allows you to:
 - Write templates for your code using EJS
