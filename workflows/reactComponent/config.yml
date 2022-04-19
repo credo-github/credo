@@ -1,4 +1,4 @@
-headline: How we write a React component at Credo
+headline: How to write and test a React component
 questions:
   - name:
       type: string
@@ -7,14 +7,27 @@ questions:
   - props:
       type: stringArray
       prompt: What props does your component need?
-      subtext: "List them like <propName>:<propType> e.g. tags: string[]"
+      subtext: "List them like <prop-name-kebab-case>:<propType> e.g. tags: string[]"
   - state:
       type: stringArray
       prompt: What state does your component need?
-      subtext: "List them like <propName>:<propType> e.g. tags: string[]"
+      subtext: "List them like <prop-name-kebab-case>:<propType> e.g. tags: string[]"
   - tests:
       type: stringArray
       prompt: What should we test about the component?
-      subtext: (start your answers with 'should' e.g. "should render")
+      subtext: start your answers with 'should' e.g. "should render"
+  - fetchesResource:
+      type: boolean
+      prompt: Does the component make a get request when it first renders?
+      subtext: this might be because it uses data from an api
+  - fetchedResourcePath:
+      type: string
+      dependentKey: fetchesResource
+      prompt: What is the url for the fetched resource?
+      subtext: it should look something like 'api/whatever' without a leading slash
 templates:
   - reactComponentGroup
+tags:
+  - react
+  - frontend
+  - code pattern

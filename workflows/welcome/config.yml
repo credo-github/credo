@@ -1,31 +1,24 @@
-headline: Credo's starter repo.
+headline: Get started with Credo
 questions:
   - name:
       type: string
       prompt: To get us started, what is your name?
-      subtext:  (it doesn't need to be your real name, just something we can call you for the duration of this welcome)
-  - developerType:
-      prompt: How would you describe yourself as a developer?
-      type: enum
-      enumMembers: 
-        - frontend
-        - backend
-        - fullstack
-        - devops
-        - all of the above
-      switch:
-        frontend:
-          - howHappyFrontend:
-              prompt: How happy are you with being a frontend dev out of 5?
-              type: enum
-              enumMembers:
-               - 1
-               - 2
-               - 3
-               - 4
-               - 5
-  - learnMore:
-      prompt: Would you like to learn more?
+      subtext:  it doesn't need to be your real name, just something we can call you for the duration of this welcome
+  - ready:
       type: boolean
+      prompt: Ready to get going?
+      dependentKey: name
+  - fibType:
+      type: enum
+      prompt: "Let's show how snippets can be rendered conditionally, pick a complexity:"
+      dependentKey: ready
+      enumMembers:
+        - O(n)
+        - Recursive (and exponential)
+        - Recursive (with memoization (linear))
+  - readyForSubDirs:
+      type: boolean
+      prompt: Ready to learn about subdirectories and templates?
+      dependentKey: fibType
 templates:
   - welcome

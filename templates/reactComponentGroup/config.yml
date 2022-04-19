@@ -13,6 +13,8 @@ parameters:
     type: stringArray
   state:
     type: stringArray
+  fetchedResourcePath:
+    type: string
     
 tags:
   - react
