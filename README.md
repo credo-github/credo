@@ -24,6 +24,9 @@ You can call the workflows from the Credo cli like this:
 ```sh
 credo @you_user_name/workflow_name
 ```
+This will initiate a dialogue to gather the workflow requirements.
+
+When all requirements are gathered, the CLI will display a summary of what will be written, and ask you to confirm.
 
 #### Examples
 
