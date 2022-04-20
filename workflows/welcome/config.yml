@@ -17,6 +17,7 @@ questions:
       dependentKey: name
       prompt: "Choose a topic:"
       enumMembers:
+        - "..."
         - examples
   - fibType:
       type: enum
