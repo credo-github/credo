@@ -4,13 +4,18 @@ questions:
       type: string
       prompt: To get us started, what is your name?
       subtext:  it doesn't need to be your real name, just something we can call you for the duration of this welcome
-  - ready:
-      type: boolean
-      prompt: Ready to get going?
+  - chosenLanguage:
+      type: enum
+      prompt: "Which language are you most comfortable with?"
       dependentKey: name
+      enumMembers:
+        - JavaScript
+        - ruby
+        - Python
   - fibType:
       type: enum
-      prompt: "Let's show how snippets can be rendered conditionally, pick a complexity:"
+      prompt: "Let's take a look at the fibonnacci function in your chosen language:"
+      subtext: "Don't worry if you don't understand the options, just pick one"
       dependentKey: ready
       enumMembers:
         - O(n)

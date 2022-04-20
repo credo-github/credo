@@ -1,11 +1,9 @@
 parameters:
   name:
     type: string
-  ready:
-    type: boolean
+  chosenLanguage:
+    type: string
   fibType:
     type: string
-  readyForSubDirs:
-    type: boolean
 tags:
   - welcome
