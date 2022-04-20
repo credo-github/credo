@@ -5,5 +5,7 @@ parameters:
     type: string
   fibType:
     type: string
+  mode:
+    type: string
 tags:
   - welcome

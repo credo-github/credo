@@ -12,6 +12,12 @@ questions:
         - JavaScript
         - ruby
         - Python
+  - mode:
+      type: enum
+      dependentKey: name
+      prompt: "Choose a topic:"
+      enumMembers:
+        - examples
   - fibType:
       type: enum
       prompt: "Let's take a look at the fibonnacci function in your chosen language:"
@@ -21,9 +27,6 @@ questions:
         - O(n)
         - Recursive (and exponential)
         - Recursive (with memoization (linear))
-  - readyForSubDirs:
-      type: boolean
-      prompt: Ready to learn about subdirectories and templates?
-      dependentKey: fibType
+  
 templates:
   - welcome
