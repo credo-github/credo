@@ -1,11 +1,11 @@
 <%
+const kebabCaseName = name
+    .trim()
+    .split(' ')
+    .join('-');
 const capitalizedName = capitalize(
-    dashToCamel(
-        name
-            .split(' ')
-            .join('-')
-        )
-)
+    dashToCamel(kebabCaseName)
+);
 
 %>class Welcome<%- capitalizedName %>
 end
