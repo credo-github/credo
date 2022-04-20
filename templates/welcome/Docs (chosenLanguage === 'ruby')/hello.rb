@@ -1,6 +1,7 @@
 <%
 const kebabCaseName = name
     .trim()
+    .toLocaleLowerCase()
     .split(' ')
     .join('-');
 const capitalizedName = capitalize(
